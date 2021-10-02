@@ -17,7 +17,7 @@ const Shop = () => {
                 setProducts(data);
                 setDisplayProducts(data);
             });
-    }, []);
+    }, [cart]);
 
     useEffect(() => {
         if (products.length) {
