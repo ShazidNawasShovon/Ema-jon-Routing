@@ -6,6 +6,7 @@ import Shop from './components/Shop/Shop';
 import OrderReview from './components/OrderReview/OrderReview';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter } from 'react-router-dom';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/order">
             <OrderReview></OrderReview>
+          </Route>
+          <Route path="/placeOrder">
+            <PlaceOrder></PlaceOrder>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
